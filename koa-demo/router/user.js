@@ -9,7 +9,10 @@ router.put('/', (ctx, next) => {
 })
 
 router.get('/', (ctx, next) => {
-    ctx.response.body = 'user list'
+    ctx.status = 200;
+    ctx.response.body = {
+        a:'2'
+    }
 })
 
 router.post('/aaa', (ctx, next) => {
